@@ -1,0 +1,17 @@
+p.threat
+{
+    background-color: blue;
+    color: white;
+    font-family: fantasy;
+    background-image: url(1.jpg)
+}
+
+p.awesome
+{
+    background-image: url("flame.jpg");
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    font-style: oblique;
+    font-stretch: ultra-expanded;
+}

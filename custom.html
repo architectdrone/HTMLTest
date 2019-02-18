@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Custom HTML</title>
+    </head>
+    <b>Text:</b><br>
+    Color: <input type="text" id='t-color'><br>
+    Width: <input type="text" id='t-w'><br>
+    <b>Background:</b><br>
+    Color: <input type="text" id='b-color'><br>
+    <button type="button" onclick="update()">Update...</button>
+    <br>
+    <br>
+    <p id="toChange">This is the dummy text. It is not very nice to say that about a piece of text!</p>
+    <script>
+    function update()
+    {
+        let myText = document.getElementById("toChange");
+        myText.style.color = document.getElementById("t-color").value;
+        myText.style.width = document.getElementById("t-w");
+        myText.style.backgroundColor = document.getElementById("b-color").value;
+    }
+    </script>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link href="mycss.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <title>Cool Pictures of Space</title>
+    <h1>HOLY CRAP!</h1>
+    <i>Space is <b class="awesome">AWESOME</b>! Click on the picture to cycle!</i><br>
+    <img src="1.jpg" id="content" onclick="update()" height="300" width="400">
+    <p class='threat'>Listen buddy, if you don't think that space is the COOLEST thing, you are obviously a little goofster.</p>
+    <script>
+        let current = 1
+        function update()
+        {
+            document.getElementById("content").src=current+".jpg";
+            current+=1;
+            if (current > 5)
+            {
+                current = 1;
+            }
+        }
+    </script>
+</html>
